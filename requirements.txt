@@ -1,12 +1,10 @@
 pandas==0.23.4
 scikit-learn
-filechunkio
 unidecode
-xgboost
 statsmodels
 seaborn
 jupyter
 matplotlib==3.0.2
-pyspark==2.4.0
 jupyterthemes
 seaborn
+pyspark==2.4.0

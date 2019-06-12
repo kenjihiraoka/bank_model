@@ -47,14 +47,10 @@ RUN curl -sL --retry 3 \
 
 RUN rm -rf /var/lib/apt/lists/*
 
-COPY . /trabalho-lucas
-WORKDIR /trabalho-lucas
+COPY . /bank_model
+WORKDIR /bank_model
 
 RUN pip3 install --upgrade pip
 RUN pip3 install -r requirements.txt
 
-# Run the command on container startup
-# CMD /trabalho-lucas/start.sh
-
-ENTRYPOINT exec /trabalho-lucas/start.sh
-
+RUN python3 setup.py develop

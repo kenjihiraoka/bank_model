@@ -17,7 +17,7 @@
   
     docker build -t bank_model .
   
-    docker exec -ti -p 8888:8888 --name bank_model bank_model:latest /bin/bash
+    docker run -v $(pwd):/bank_model -ti -p 8888:8888 --name bank_model bank_model:latest /bin/bash
   
     jupyter notebook --allow-root --ip=0.0.0.0
  

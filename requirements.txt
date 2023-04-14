@@ -7,4 +7,4 @@ jupyter
 matplotlib==3.0.2
 jupyterthemes
 seaborn
-pyspark==2.4.0
+pyspark==3.2.2
